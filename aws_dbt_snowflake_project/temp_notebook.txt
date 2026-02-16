@@ -1,0 +1,3 @@
+export $(grep -v '^#' .env | xargs)
+
+-- this is used to export all the environment variables from the .env file to the terminal session. This allows you to use those variables in your dbt project without hardcoding them in your dbt profiles.yml file.
